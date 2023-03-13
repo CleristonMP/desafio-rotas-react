@@ -16,7 +16,7 @@ export default function Header() {
             Início
           </NavLink>
           <NavLink
-            to="/promotion"
+            to="/products"
             className={({ isActive }) =>
               isActive ? "menu-item menu-active" : "menu-item"
             }
@@ -24,7 +24,7 @@ export default function Header() {
             Produtos
           </NavLink>
           <NavLink
-            to="/sub"
+            to="/about"
             className={({ isActive }) =>
               isActive ? "menu-item menu-active" : "menu-item"
             }

@@ -7,6 +7,7 @@ import Products from "./routes/Products";
 import Books from "./routes/Products/Books";
 import Computers from "./routes/Products/Computers";
 import Electronics from "./routes/Products/Electronics";
+import ProductsIndex from "./routes/Products/ProductsIndex";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Navigate to="/home" />} />
           <Route path="home" element={<HomeBody />} />
           <Route path="products" element={<Products />}>
+            <Route index element={<ProductsIndex />} />
             <Route path="computers" element={<Computers />} />
             <Route path="electronics" element={<Electronics />} />
             <Route path="books" element={<Books />} />
